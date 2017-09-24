@@ -1,26 +1,54 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro');
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, iframe {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: block;
+}
+
 body{
-    background-color: #383838;
+    background: url(https://i.imgur.com/zUIB3H8.jpg) scroll no-repeat;
+    background-size: 100% 100%;
     font-family: "Source Sans Pro";
     color: #C2C2C2;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #222;
+}
+
 p::selection, h1::selection{
+    text-shadow: 0px 0px 0px;
     color: #464646;
     background-color: #fff
 }
-
-.container_main{
+/*
+#header{
+    background: url(https://static.pexels.com/photos/51387/mount-everest-himalayas-nuptse-lhotse-51387.jpeg)  center scroll;
+    background-size: cover;
+    height: 250px;
 }
-
+*/
 .navbar{
-    top: 0%;
-    background-color: #333;
+    background-color: #222;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar a{
@@ -28,7 +56,7 @@ p::selection, h1::selection{
     display: block;
     color: #C2C2C2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 13px;
     text-decoration: none;
 }
 .navbar a:hover{
@@ -37,26 +65,25 @@ p::selection, h1::selection{
 }
 
 .container{
-
+    background-color: rgba(24, 24, 24, 0.95);
 }
 
 .gallery{
-    margin-top: 50px;
-    padding: 5px;
-    background-color: #464646;
+    margin-right: 15px;
+    margin-left: 15px;
     text-align: center;
 }
 
 .gallery:hover{
-    background-color: #494949;
 }
 
 .gallery h1{
     text-shadow: 0px 0px 15px black;
     font-size: 50px;
 }
-.gallery.desc{
-    font-size: 25px;
+.desc{
+    font-size: 20px;
+    padding-bottom: 25px;
 }
 
 .images{
@@ -65,23 +92,39 @@ p::selection, h1::selection{
     margin-bottom: 50px;
 }
 
-.img-with-desc{
-    display: block;
+.thread{
+    vertical-align: top;
     display: inline-block;
-    width: 20%;
-    margin: 15px;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px 0 3px 0;
+    position: relative;
+    text-align: center;
+    padding: 5px;
 }
 
-.img-with-desc img{
+.thread img{
+    /*
+    opacity: 0.5;
     margin-bottom: 15px;
     margin-right: 15px;
-    width: 100%;
     box-shadow: 0px 0px 15px #000000;
     border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 500px;
+    object-fit: contain;
+    */
+    width: 250px;
+    max-height: 320px;
 }
 
 
-.images img:hover{
-    border-radius: 0px;
-    box-shadow: 0px 0px 15px #fff;
+.thread img:hover{
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #fff;
 }
