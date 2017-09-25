@@ -6,7 +6,6 @@ html{
     min-height: 100%;
 }
 
-
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, iframe {
     margin: 0;
     padding: 0;
@@ -25,15 +24,21 @@ body{
 }
 
 footer{
-    /* position: absolute;
-    bottom: 0; */
-    /* height: 100px; */
+    /* 
+    position: absolute;
+    bottom: 0;
+    height: 100px; 
     width: 100%;
     overflow:hidden;
     padding: 15px;
     font-size: 25px;
     text-align: center;
     background-color: #333;
+    */
+    display: block;
+    background-color:#fff;
+    border-top: 1px solid gray;
+    margin-top: 50px;
 }
 
 p::selection, h1::selection{
@@ -144,6 +149,14 @@ td{
 
 td:hover{
     background-color: #555;
+}
+
+.footer .container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .notice{
