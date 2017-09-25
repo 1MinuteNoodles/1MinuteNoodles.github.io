@@ -1,10 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro');
 
-html {
+html{
     position: relative;
     min-height: 100%;
 }
+
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, iframe {
     margin: 0;
@@ -16,6 +17,7 @@ div{
 }
 
 body{
+    min-height: 700px;
     background: url(https://i.imgur.com/zUIB3H8.jpg) scroll no-repeat;
     background-size: 100% 100%;
     font-family: "Source Sans Pro";
@@ -23,15 +25,15 @@ body{
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
-    height: 100px;
+    /* position: absolute;
+    bottom: 0; */
+    /* height: 100px; */
     width: 100%;
     overflow:hidden;
     padding: 15px;
     font-size: 25px;
     text-align: center;
-    background-color: #222;
+    background-color: #333;
 }
 
 p::selection, h1::selection{
@@ -46,12 +48,12 @@ p::selection, h1::selection{
     height: 250px;
 }
 */
-.navbar{
-    background-color: #222;
+#navbar{
+    background-color: #333;
     overflow: hidden;
 }
 
-.navbar a{
+#navbar a{
     float: left;
     display: block;
     color: #C2C2C2;
@@ -59,7 +61,7 @@ p::selection, h1::selection{
     padding: 10px 13px;
     text-decoration: none;
 }
-.navbar a:hover{
+#navbar a:hover{
     background-color: #4D4D4D;
     color: white;
 }
@@ -69,12 +71,7 @@ p::selection, h1::selection{
 }
 
 .gallery{
-    margin-right: 15px;
-    margin-left: 15px;
     text-align: center;
-}
-
-.gallery:hover{
 }
 
 .gallery h1{
@@ -118,7 +115,7 @@ p::selection, h1::selection{
     max-width: 500px;
     object-fit: contain;
     */
-    width: 250px;
+    width: 175px;
     max-height: 320px;
 }
 
@@ -127,4 +124,33 @@ p::selection, h1::selection{
     opacity: 1;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #fff;
+}
+
+.tabell{
+    border: 5px solid white;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+th{
+    padding: 15px;
+    background-color: #fff;
+}
+td{
+    padding: 15px;
+    background-color: #222;
+}
+
+td:hover{
+    background-color: #555;
+}
+
+.notice{
+    float: left;
+    padding: 5px;
+    background-color: #444;
+    margin: 25px;
+    font-size: 15px;
+    display: inline-block;
 }
