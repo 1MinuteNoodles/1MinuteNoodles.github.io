@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro');
 
-html{
-    position: relative;
-    min-height: 100%;
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, iframe {
@@ -11,159 +11,58 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
     padding: 0;
 }
 
-div{
-    display: block;
-}
-
 body{
     min-height: 700px;
-    background: url(https://i.imgur.com/zUIB3H8.jpg) scroll no-repeat;
+    background: linear-gradient(#BBF1FF, #4D7BC0) scroll no-repeat;
     background-size: 100% 100%;
     font-family: "Source Sans Pro";
     color: #C2C2C2;
 }
-
-footer{
-    /* 
-    position: absolute;
-    bottom: 0;
-    height: 100px; 
-    width: 100%;
-    overflow:hidden;
-    padding: 15px;
-    font-size: 25px;
-    text-align: center;
-    background-color: #333;
-    */
-    display: block;
-    background-color:#fff;
-    border-top: 1px solid gray;
-    margin-top: 50px;
+section{
+    padding: 100px 0;
+    padding-bottom: 50px;
 }
 
-p::selection, h1::selection{
-    text-shadow: 0px 0px 0px;
-    color: #464646;
-    background-color: #fff
-}
-/*
-#header{
-    background: url(https://static.pexels.com/photos/51387/mount-everest-himalayas-nuptse-lhotse-51387.jpeg)  center scroll;
-    background-size: cover;
-    height: 250px;
-}
-*/
 #navbar{
-    background-color: #333;
-    overflow: hidden;
+    background-color: #4D7BC0;
+    height: 5em;
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
-#navbar a{
-    float: left;
-    display: block;
-    color: #C2C2C2;
-    text-align: center;
-    padding: 10px 13px;
-    text-decoration: none;
+#navbar li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px 25px;
+    text-decoration: none;  
+    color: #fff;
 }
-#navbar a:hover{
-    background-color: #4D4D4D;
-    color: white;
+#navbar li:hover{
+    background-color: rgba(221, 221, 221, 0.43);
+}
+#navbar li a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.navbar-right{
+    float: right!important;
+    margin-right: -15px;
+}
+
+#download{
+    padding-top: 50px;
 }
 
 .container{
-    background-color: rgba(24, 24, 24, 0.95);
+    width: 970px;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-.gallery{
-    text-align: center;
-}
-
-.gallery h1{
-    text-shadow: 0px 0px 15px black;
-    font-size: 50px;
-}
-.desc{
-    font-size: 20px;
-    padding-bottom: 25px;
-}
-
-.images{
-    padding: 25px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.thread{
-    vertical-align: top;
-    display: inline-block;
-    word-wrap: break-word;
-    overflow: hidden;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    padding: 5px 0 3px 0;
-    position: relative;
-    text-align: center;
-    padding: 5px;
-}
-
-.thread img{
-    /*
-    opacity: 0.5;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    box-shadow: 0px 0px 15px #000000;
-    border-radius: 5px;
-    width: 100%;
-    overflow: hidden;
-    max-height: 300px;
-    max-width: 500px;
-    object-fit: contain;
-    */
-    width: 175px;
-    max-height: 320px;
-}
-
-
-.thread img:hover{
-    opacity: 1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #fff;
-}
-
-.tabell{
-    border: 5px solid white;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-}
-
-th{
-    padding: 15px;
-    background-color: #fff;
-}
-td{
-    padding: 15px;
-    background-color: #222;
-}
-
-td:hover{
-    background-color: #555;
-}
-
-.footer .container{
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.notice{
-    float: left;
-    padding: 5px;
-    background-color: #444;
-    margin: 25px;
-    font-size: 15px;
-    display: inline-block;
+.bg-primary{
+    background-color: #46a5f0;
 }
