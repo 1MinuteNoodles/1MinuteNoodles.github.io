@@ -20,7 +20,7 @@ body{
     min-height: 700px;
     background: linear-gradient(#BBF1FF, #4D7BC0) scroll no-repeat;
     background-size: 100% 100%;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", sans-serif;
     color: white;
 }
 section{
@@ -70,11 +70,18 @@ section{
 
 #info{
     padding-top: 25px;
-    background-color: #46a5f0;
+    /*background-color: #46a5f0;*/
+    background-image: url("images/namejeff1.jpg");
+    background-size: 100% auto;
+    background-position-y: -100px;
+    height: 250px;
     text-align: center;
     font-size: 24px;
 }
 
+#info h1{
+    margin-top: 100px;
+}
 
 #download{
     padding-top: 50px;
