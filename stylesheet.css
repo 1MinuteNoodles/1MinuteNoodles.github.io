@@ -81,7 +81,8 @@ section{
 }
 
 #info h1{
-    margin-top: 17.5%;
+    /*margin-top: 17.5%;*/
+    line-height: 500px;
 }
 
 #download{
