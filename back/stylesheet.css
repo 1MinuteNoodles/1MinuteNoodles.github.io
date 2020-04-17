@@ -67,6 +67,7 @@ section{
     height: auto;
 }
 
+
 #info{
     padding-top: 25px;
     /*background-color: #46a5f0;*/
@@ -77,6 +78,7 @@ section{
     text-align: center;
     font-size: 24px;
 }
+
 
 #info h1{
     /*margin-top: 17.5%;*/
