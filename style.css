@@ -5,6 +5,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     margin-top: 500px;
     background-color: #4CAF50;
     /* Green */
