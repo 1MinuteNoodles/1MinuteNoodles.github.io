@@ -1,12 +1,18 @@
 body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(https://media.giphy.com/media/SJ1woRr6sw276/200.gif) no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
 }
 
 button {
     cursor: pointer;
-    margin-top: 500px;
     background-color: #4CAF50;
     /* Green */
     border: none;
@@ -17,3 +23,21 @@ button {
     display: inline-block;
     font-size: 90px;
 }
+
+.square {
+    height: 10px;
+    width: 10px;
+    position: absolute;    
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(2);
+    }
+    100% {
+      transform: rotate(359deg) scale(1);
+    }
+  }
